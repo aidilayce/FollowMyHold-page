@@ -30,4 +30,4 @@ jobs:
       - name: Prettier
         run: npm run format
       - name: Typos
-        runt: typos
+        run: typos

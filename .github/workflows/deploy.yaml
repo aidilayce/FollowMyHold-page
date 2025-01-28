@@ -3,40 +3,31 @@ on:
   push:
     branches:
       - project-page
-
 permissions:
   contents: read
-  pages: write
   id-token: write
 
 jobs:
   build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: Use Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '22.x'
-      - name: Cache node_modules
-        uses: actions/cache@v3
-        with:
-          path: '**/node_modules'
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
-      - name: Install dependencies
+          node-version: 22.12.0
+      - name: install
         run: npm ci
-      - name: Build
+      - name: build
         run: npm run build
         continue-on-error: true
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      - name: upload
+        uses: actions/upload-pages-artifact@v2
         with:
           path: build
   deploy:
     needs: build
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

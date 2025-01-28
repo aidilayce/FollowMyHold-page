@@ -37,6 +37,7 @@
     "husky": "^9.1.7",
     "js-yaml": "^4.1.0",
     "lint-staged": "^15.4.3",
+    "node-actionlint": "^1.2.2",
     "prettier": "^3.2.1",
     "react-snap": "^1.23.0",
     "sass": "^1.83.4",
@@ -69,6 +70,9 @@
     ],
     "*": [
       "typos --write-changes"
+    ],
+    "*": [
+      "node-actionlint"
     ]
   }
 }

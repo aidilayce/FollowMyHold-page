@@ -5,6 +5,7 @@ on:
       - project-page
 permissions:
   contents: read
+  pages: write
   id-token: write
 
 jobs:

@@ -12,6 +12,8 @@ import SpeakerDeck from '@/components/speakerdeck';
 import Projects from '@/components/projects';
 import data from '../../template.yaml';
 
+import "@/js/styles.js";
+
 class Template extends React.Component {
   render() {
     return (

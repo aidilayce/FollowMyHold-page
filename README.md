@@ -122,6 +122,16 @@ git remote add origin your-repo-url
 git push origin project-page
 ```
 
+🚨 TroubleShooting
+
+<details>
+<summary>Branch "project-page" is not allowed to deploy to github-pages due to environment protection rules</summary>
+Navigate to Settings > Environments > github-pages > 🗑️
+  
+![image](https://github.com/user-attachments/assets/ddaa751d-cedc-4665-86a1-8afd88e04e52)
+
+</details>
+
 📚 For more details:
 
 - [GitHub Pages Documentation](https://docs.github.com/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)

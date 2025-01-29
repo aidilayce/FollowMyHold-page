@@ -18,29 +18,96 @@ class Template extends React.Component {
   render() {
     return (
       <div>
-        <Helmet>
-          <title>{data.title}</title>
-          <meta name="description" content={data.description} />
-
-          {/* Open Graph / Facebook */}
-          <meta property="og:type" content="article" />
-          <meta property="og:url" content={data.url} />
-          <meta property="og:title" content={data.title} />
-          <meta property="og:description" content={data.description} />
-          <meta property="og:image" content={data.image} />
-          <meta property="og:image:alt" content={data.description} />
-          <meta property="og:image:width" content="1200" />
-          <meta property="og:image:height" content="630" />
-          <meta property="og:site_name" content={data.organization} />
-
-          {/* Twitter */}
-          <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:url" content={data.url} />
-          <meta name="twitter:title" content={data.title} />
-          <meta name="twitter:description" content={data.description} />
-          <meta name="twitter:image:src" content={data.image} />
-          <meta name="twitter:site" content={data.twitter} />
-        </Helmet>
+        <Helmet
+          title={data.title}
+          link={[
+            { rel: 'icon', type: 'image/x-icon', href: 'favicon.ico' },
+            {
+              rel: 'icon',
+              type: 'image/png',
+              sizes: '32x32',
+              href: 'favicon-32x32.png',
+            },
+            {
+              rel: 'icon',
+              type: 'image/png',
+              sizes: '16x16',
+              href: 'favicon-16x16.png',
+            },
+          ]}
+          meta={[
+            {
+              name: 'description',
+              content: data.description,
+            },
+            {
+              name: 'viewport',
+              content: 'width=device-width,initial-scale=1',
+            },
+            // Open Graph / Facebook
+            {
+              property: 'og:type',
+              content: 'article',
+            },
+            {
+              property: 'og:url',
+              content: data.url,
+            },
+            {
+              property: 'og:title',
+              content: data.title,
+            },
+            {
+              property: 'og:description',
+              content: data.description,
+            },
+            {
+              property: 'og:image',
+              content: data.image,
+            },
+            {
+              property: 'og:image:alt',
+              content: data.description,
+            },
+            {
+              property: 'og:image:width',
+              content: '1200',
+            },
+            {
+              property: 'og:image:height',
+              content: '630',
+            },
+            {
+              property: 'og:site_name',
+              content: data.organization,
+            },
+            // Twitter
+            {
+              name: 'twitter:card',
+              content: 'summary_large_image',
+            },
+            {
+              name: 'twitter:url',
+              content: data.url,
+            },
+            {
+              name: 'twitter:title',
+              content: data.title,
+            },
+            {
+              name: 'twitter:description',
+              content: data.description,
+            },
+            {
+              name: 'twitter:image:src',
+              content: data.image,
+            },
+            {
+              name: 'twitter:site',
+              content: data.twitter,
+            },
+          ]}
+        />
         <Header
           title={data.title}
           journal={data.journal}

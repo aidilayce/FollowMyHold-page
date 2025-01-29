@@ -137,6 +137,32 @@ Navigate to Settings > Environments > github-pages > 🗑️
 - [GitHub Pages Documentation](https://docs.github.com/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
 - [actions-deploy-pages](https://github.com/actions/deploy-pages)
 
+## 🐶 Husky & Typo Checking
+
+### Automatic Typo Checking
+
+This project uses Husky to automatically check for typos during commits. The check is performed using the `typos` tool and only runs on staged files (files that have been `git add`ed).
+
+### Manual Typo Checking
+
+To manually check for typos without committing:
+
+```bash
+npx typos
+```
+
+This command checks all files in the project, regardless of whether they are staged for commit or not.
+
+### Disabling Git Hooks
+
+To temporarily disable all git hooks (including lint, format, and typo validation) during commit:
+
+```bash
+export HUSKY=0
+```
+
+You can re-enable hooks by unsetting the variable or starting a new terminal session.
+
 ## 📄 License
 
 [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)

@@ -60,13 +60,12 @@
   },
   "lint-staged": {
     "src/**/*.{js,jsx}": [
-      "prettier --write",
-      "eslint"
+      "prettier --write"
     ],
     "*.{json,yml,yaml,scss,sass}": [
       "prettier --write"
     ],
-    "**/*.{js,jsx,yml,yaml}": [
+    "**/*.{js,jsx,yml,yaml,md}": [
       "typos"
     ]
   }

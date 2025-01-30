@@ -17,7 +17,6 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: path.resolve(__dirname, 'index.html'),
-        styles: path.resolve(__dirname, 'src/js/styles.js'),
       },
     },
     target: 'es2015',

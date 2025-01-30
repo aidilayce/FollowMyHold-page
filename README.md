@@ -142,6 +142,14 @@ Navigate to Settings > Environments > github-pages > 🗑️
 ### Automatic Typo Checking
 
 This project uses Husky to automatically check for typos during commits. The check is performed using the `typos` tool and only runs on staged files (files that have been `git add`ed).
+If you want to ignore specific typos as a dictionary, please add the original and corrected versions to `_typos.toml`. ([doc](https://github.com/crate-ci/typos/tree/master?tab=readme-ov-file#false-positives))
+
+
+```bash
+[default.extend-words]
+# Don't correct the surname "Teh"
+teh = "teh"
+```
 
 ### Manual Typo Checking
 

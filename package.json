@@ -59,15 +59,15 @@
     "uikit": "^3.22.3"
   },
   "lint-staged": {
-    "src/*.{js,jsx}": [
+    "src/**/*.{js,jsx}": [
       "prettier --write",
       "eslint"
     ],
-    "*.{json,md,yml,yaml}": [
+    "*.{json,yml,yaml,scss,sass}": [
       "prettier --write"
     ],
-    "*": [
-      "typos --write-changes"
+    "**/*.{js,jsx,yml,yaml}": [
+      "typos"
     ]
   }
 }

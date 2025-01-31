@@ -5,7 +5,8 @@
 
 ## ✨ Features
 
-- 🚀 Built with [React](https://react.dev/) + [UIKit](https://getuikit.com/)
+- 🚀 Built with ⚛️ [React](https://react.dev/) + 🎨[UIKit](https://getuikit.com/)
+- 📝 Just one file! Write all metadata & content in [template.yaml](template.yaml)
 - 📝 Markdown support with full styling capabilities
 - ➗ Mathematical equations with KaTeX
 - 🎨 Customizable themes
@@ -13,6 +14,21 @@
 - 📱 Fully responsive design
 
 🌐 **Demo**: [default-theme](https://denkiwakame.github.io/academic-project-template)
+
+### ⚙️ Configuration
+
+Simply define everything in **a single `template.yaml` file**—**metadata**, **Markdown**, **HTML**, and even **KaTeX** equations. No extra setup required!
+
+```yaml
+theme: default # default || dark
+organization: 'Your Lab'
+title: 'Project Title'
+resources:
+  paper: https://example.com/paper
+  code: https://github.com/your/repo
+# ... other configurations
+```
+With just this file, your project page is ready to go! 🚀
 
 ## 🚦 Prerequisites
 
@@ -92,21 +108,7 @@ src/
 └── scss/             # Theme settings
     └── theme.scss
 public/
-└── media/            # Media files
-```
-
-## ⚙️ Configuration
-
-Configure your project in `template.yaml`, leaving the N/A fields as "null".
-
-```yaml
-theme: default # default || dark
-organization: 'Your Lab'
-title: 'Project Title'
-resources:
-  paper: https://example.com/paper
-  code: https://github.com/your/repo
-# ... other configurations
+└── 001.png           # Media files
 ```
 
 ## 🚀 Release Your Project Page

@@ -124,11 +124,17 @@ git remote add origin your-repo-url
 git push origin project-page
 ```
 
+> [!NOTE]
+> The implementation of the paper is published in the main branch, and the code for the project page is expected to be pushed to a separate branch.
+> If you want to change the branch settings, please modify `.github/workflows/deploy.yaml`.
+
 🚨 TroubleShooting
 
 <details>
 <summary>Branch "project-page" is not allowed to deploy to github-pages due to environment protection rules</summary>
 Navigate to Settings > Environments > github-pages > 🗑️
+or set rules properly (add `project-page` to deployable branch).
+https://docs.github.com/ja/actions/managing-workflow-runs-and-deployments/managing-deployments/managing-environments-for-deployment#deployment-protection-rules
   
 ![image](https://github.com/user-attachments/assets/ddaa751d-cedc-4665-86a1-8afd88e04e52)
 

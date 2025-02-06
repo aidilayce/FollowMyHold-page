@@ -176,6 +176,7 @@ body:
     text: |
       To customize the theme, edit UIkit variables in [theme.scss](https://github.com/denkiwakame/academic-project-template/blob/project-page/src/scss/theme.scss). Material Design colors are available as variables (e.g. `$clr-blue-50` ). For the full set of colors, please visit [Material Design Color System](https://m2.material.io/design/color/the-color-system.html#tools-for-picking-colors).
 
+      <div class="uk-overflow-auto">
       <table class="uk-table uk-table-small uk-text-small uk-table-divider">
         <thead>
           <tr>
@@ -254,6 +255,7 @@ body:
           </tr>
         </tbody>
       </table>
+      </div>
 projects: # relevant projects
   - title: Relevant Project I
     description: abstract text

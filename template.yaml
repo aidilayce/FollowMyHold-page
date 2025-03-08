@@ -93,10 +93,7 @@ body:
           <span class="uk-text-meta">Fig1 - caption example</figcaption>
         </div>
         <div>
-          <img-comparison-slider>
-            <img slot="first" src="002.jpg" />
-            <img slot="second" src="004.jpg" />
-          </img-comparison-slider>
+          <img src="002.jpg" />
           <span class="uk-text-meta">Fig2 - caption example</figcaption>
         </div>
         <div>
@@ -138,6 +135,12 @@ body:
           <a class="uk-icon-button uk-margin-small-left" href uk-slidenav-next uk-slider-item="next"></a>
         </div>
       </div>
+
+      [Image-Comparison-Slider](https://img-comparison-slider.sneas.io) example
+      <img-comparison-slider>
+        <img slot="first" src="002.jpg" />
+        <img slot="second" src="004.jpg" />
+      </img-comparison-slider>
 
   - title: Markdown examples
     text: |

@@ -10,10 +10,10 @@ resources:
   # video: https://www.youtube.com/embed/onbnb_D1wC8?si=xJczUv716Lt5aO4l&amp;start=1150
   # demo: https://colab.research.google.com/
   # huggingface: https://huggingface.co/
-description: project page for FollowMyHold
+description: Project page for FollowMyHold
 
 image: /CT/WonderHands/work/webpage_followmyhold/public/images/teaser.png
-url: https://github.com/aidilayce/FollowMyHold_project_page
+url: https://github.com/aidilayce/webpage_followmyhold
 # speakerdeck: # speakerdeck slide ID
 authors:
   - name: Ayce Idil Aytekin

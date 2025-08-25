@@ -41,7 +41,7 @@
     "sass": "^1.83.4",
     "sharp": "^0.33.2",
     "typos-rs-npm": "github:dalisoft/typos-rs-npm",
-    "vite": "^6.0.11"
+    "vite": "^6.3.5"
   },
   "dependencies": {
     "@iconify-json/logos": "^1.1.43",

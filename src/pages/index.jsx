@@ -9,7 +9,7 @@ import Body from '@/components/body';
 import Footer from '@/components/footer';
 import Citation from '@/components/citation';
 import SpeakerDeck from '@/components/speakerdeck';
-import Projects from '@/components/projects';
+// import Projects from '@/components/projects';
 import data from '../../template.yaml';
 
 import '@/js/styles.js';
@@ -128,7 +128,7 @@ class Template extends React.Component {
           <SpeakerDeck dataId={data.speakerdeck} />
           <Body body={data.body} />
           <Citation bibtex={data.bibtex} />
-          <Projects projects={data.projects} />
+          {/* <Projects projects={data.projects} /> */}
         </div>
         <Footer />
       </div>

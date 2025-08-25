@@ -1,7 +1,20 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Follow My Hold</title>
+
+    <!-- Load model-viewer once globally -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  </head>
   <body style="overflow-x: hidden">
-    <div id="root" />
+    <div id="root"></div>
+
+    <!-- React entrypoint -->
     <script type="module" src="/src/pages/index.jsx"></script>
+
+    <!-- Custom thumbnail swap logic -->
+    <script src="/swap.js"></script>
   </body>
 </html>

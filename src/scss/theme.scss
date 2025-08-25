@@ -29,6 +29,19 @@ $accent-color: $clr-pink-500;
 $theme-color: $clr-grey-100;
 $theme-color-fg: $clr-black;
 
+/* justify all paragraphs site-wide */
+p {
+  text-align: justify;
+  text-justify: inter-word;  /* nicer spacing */
+  hyphens: auto;             /* enable hyphenation */
+}
+
+.uk-text-small.uk-text-muted.uk-margin-small-top {
+  text-align: justify;
+  text-justify: inter-word;  // better spacing
+  hyphens: auto;             // allows hyphen breaks
+}
+
 // global colors
 $global-link-color: $accent-color;
 $global-link-hover-color: $accent-color;

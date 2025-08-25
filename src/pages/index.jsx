@@ -15,6 +15,25 @@ import data from '../../template.yaml';
 import '@/js/styles.js';
 
 class Template extends React.Component {
+  componentDidMount() {
+    this.runKaTeX();
+  }
+
+  componentDidUpdate() {
+    this.runKaTeX();
+  }
+
+  runKaTeX() {
+    if (window.renderMathInElement) {
+      window.renderMathInElement(document.body, {
+        delimiters: [
+          { left: "$$", right: "$$", display: true },
+          { left: "$", right: "$", display: false },
+        ],
+        throwOnError: false,
+      });
+    }
+  }
   render() {
     return (
       <div>
@@ -118,7 +137,7 @@ class Template extends React.Component {
           resources={data.resources}
           theme={data.theme}
         />
-        <div className="uk-container uk-container-small">
+        <div className="uk-container uk-container-small prose">
           <Overview
             abstract={data.abstract}
             teaser={data.teaser}

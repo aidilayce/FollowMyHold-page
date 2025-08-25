@@ -35,8 +35,8 @@ def main():
     ap.add_argument("--no-center", action="store_true")
     ap.add_argument("--no-unit-scale", action="store_true")
     ap.add_argument("--mm", action="store_true", help="Convert mm to meters (scale 0.001)")
-    ap.add_argument("--hand-color", type=str, default="180,200,255,255")
-    ap.add_argument("--obj-color", type=str,  default="200,200,200,255")
+    ap.add_argument("--hand-color", type=str, default="184,184,209,255")
+    ap.add_argument("--obj-color", type=str,  default="200,225,204,255")
     args = ap.parse_args()
 
     hand = _ensure_trimesh(trimesh.load(args.hand, process=True))
@@ -48,8 +48,8 @@ def main():
         obj.apply_scale(0.001)
 
     # If either mesh lacks vertex colors, paint a solid color
-    hc = _parse_color(args.hand_color, [180,200,255,255])
-    oc = _parse_color(args.obj_color,  [200,200,200,255])
+    hc = _parse_color(args.hand_color, [184,184,209,255])
+    oc = _parse_color(args.obj_color,  [200,225,204,255])
     if not hand.visual.kind == 'vertex':
         hand.visual.vertex_colors = np.tile(hc, (len(hand.vertices), 1))
     if not obj.visual.kind == 'vertex':

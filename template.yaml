@@ -115,10 +115,10 @@ body:
               <a
                 class="swap-model"
                 href="#"
-                data-model="models/arctic/hoi_143.glb"
+                data-model="models/arctic/hoi_960.glb"
               >
                 <img
-                  src="models/arctic/143_cropped_hoi_1.png"
+                  src="models/arctic/960_cropped_hoi_0.png"
                   class="uk-width-1-1"
                   alt="Arctic #1"
                 >
@@ -129,12 +129,12 @@ body:
               <a
                 class="swap-model"
                 href="#"
-                data-model="models/arctic/hoi_960.glb"
+                data-model="models/arctic/hoi_325.glb"
               >
                 <img
-                  src="models/arctic/960_cropped_hoi_0.png"
+                  src="models/arctic/325_cropped_hoi_1.png"
                   class="uk-width-1-1"
-                  alt="OakInk #3"
+                  alt="Arctic #2"
                 >
                 <div class="uk-text-meta">Arctic #2</div>
               </a>

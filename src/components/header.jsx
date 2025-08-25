@@ -74,7 +74,30 @@ export default class Header extends React.Component {
         <div className="uk-cover-container uk-background-secondary">
           <div className="uk-container uk-container-small uk-section">
             <div className="uk-text-center uk-text-bold">
+              {/* Logo bar */}
+              <div className="logo-bar" style={{ display: "flex", justifyContent: "center", alignItems: "center", flexWrap: "wrap", marginBottom: "20px" }}>
+                <a href="https://www.mpi-inf.mpg.de/home/" target="_blank" rel="noreferrer">
+                  <img
+                    src="images/logos/mpi.png"
+                    alt="MPI-INF"
+                    height="10"
+                    style={{ margin: "0 8px" }}
+                  />
+                </a>
+                <a href="https://saarland-informatics-campus.de/" target="_blank" rel="noreferrer">
+                  <img
+                    src="images/logos/sic-logo.webp"
+                    alt="Saarland Informatics Campus"
+                    height="10"
+                    style={{ margin: "0 8px" }}
+                  />
+                </a>
+                {/* add more logos here */}
+              </div>
+
+              {/* Title */}
               <p className={titleClass}>{this.props.title}</p>
+
               <span className="uk-label uk-label-primary uk-text-center uk-margin-small-bottom">
                 {this.props.journal}
               </span>

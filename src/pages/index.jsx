@@ -138,17 +138,19 @@ class Template extends React.Component {
           theme={data.theme}
         />
         <div className="uk-container uk-container-small prose">
-          <Overview
-            abstract={data.abstract}
-            teaser={data.teaser}
-            description={data.description}
-          />
+          <Body body={data.body.slice(0,2)} />
+          <div className="abstract-block">
+            <Overview
+              abstract={data.abstract}
+              teaser={data.teaser}
+              description={data.description}
+            />
+          </div>
+          <Body body={data.body.slice(2)} />
           <Video video={data.resources.video} />
           <SpeakerDeck dataId={data.speakerdeck} />
-          <Body body={data.body} />
           <Citation bibtex={data.bibtex} />
-          {/* <Projects projects={data.projects} /> */}
-        </div>
+          </div>
         <Footer />
       </div>
     );

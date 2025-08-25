@@ -75,3 +75,46 @@ pre {
   width: auto !important;
   height: auto !important;
 }
+
+.tldr {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  padding: .75rem 1rem;
+  margin: 1rem 0 1.5rem;
+  background: #f5f5f5;
+  border-radius: 12px;
+  font-size: 1.05rem;
+}
+
+.tldr-badge {
+  display: inline-block;
+  font-weight: 700;
+  padding: .25rem .6rem;
+  border-radius: 999px;
+  background: #222;
+  color: #fff;
+  letter-spacing: .02em;
+}
+
+/* tighten vertical rhythm only inside the main content area */
+.prose {
+  /* UIkit sections (often used by the Body renderer) have big padding */
+  .uk-section { padding-top: 16px; padding-bottom: 16px; }
+
+  /* UIkit adds large top margins on some headings/lines */
+  .uk-heading-line { margin-top: 16px !important; margin-bottom: 16px !important; }
+  .uk-margin-large-top, .uk-margin-xlarge-top { margin-top: 16px !important; }
+
+  /* paragraphs: slightly tighter bottom gap */
+  p { margin-bottom: 0.85rem; }
+}
+
+/* specifically reduce the gap after Abstract */
+.abstract-block { margin-bottom: 16px; }
+
+/* make sure the section that follows Abstract doesn't re-introduce a big top gap */
+.abstract-block + .uk-section,
+.abstract-block + .uk-margin-large-top,
+.abstract-block + .uk-margin-xlarge-top,
+.abstract-block + div { margin-top: 8px !important; }

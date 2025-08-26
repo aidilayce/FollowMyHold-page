@@ -7,7 +7,7 @@ title: "Follow My Hold: Hand-Object Interaction Reconstruction through Geometric
 
 resources:
   # paper: "https://openreview.net/"
-  arxiv: "https://aidilayce.github.io/FollowMyHold-page/"
+  arxiv: "https://arxiv.org/pdf/2508.18213"
   code: "https://github.com/aidilayce/FollowMyHold"
   # video: "https://www.youtube.com/embed/onbnb_D1wC8?si=xJczUv716Lt5aO4l&start=1150"
   demo: "https://aidilayce.github.io/FollowMyHold-page/"
@@ -39,12 +39,14 @@ affiliations:
   - "Bielefeld University"
 
 bibtex: |
-  @article{aytekin2025followmyhold,
-    title         = {Follow My Hold: Hand-Object Interaction Reconstruction through Geometric Guidance},
-    author        = {Aytekin, Ayce Idil and Rhodin, Helge and Dabral, Rishabh and Theobalt, Christian},
-    journal       = {arXiv preprint arXiv:2501.xxxxx},
-    year          = {2025},
-    url           = {https://arxiv.org/abs/2501.xxxxx}
+  @misc{aytekin2025followholdhandobjectinteraction,
+      title={Follow My Hold: Hand-Object Interaction Reconstruction through Geometric Guidance}, 
+      author={Ayce Idil Aytekin and Helge Rhodin and Rishabh Dabral and Christian Theobalt},
+      year={2025},
+      eprint={2508.18213},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2508.18213}, 
   }
 
 teaser: "images/teaser.png"
@@ -87,48 +89,6 @@ body:
               <a
                 class="swap-model"
                 href="#"
-                data-model="models/oakink/hoi_26.glb"
-              >
-                <img
-                  src="models/oakink/26_cropped_hoi_1.png"
-                  class="uk-width-1-1"
-                  alt="Example #1"
-                >
-                <div class="uk-text-meta">Headphones</div>
-              </a>
-            </div>
-            <div>
-              <a
-                class="swap-model"
-                href="#"
-                data-model="models/arctic/hoi_960.glb"
-              >
-                <img
-                  src="models/arctic/960_cropped_hoi_0.png"
-                  class="uk-width-1-1"
-                  alt="Example #2"
-                >
-                <div class="uk-text-meta">Coffee machine</div>
-              </a>
-            </div>
-            <div>
-              <a
-                class="swap-model"
-                href="#"
-                data-model="models/arctic/hoi_325.glb"
-              >
-                <img
-                  src="models/arctic/325_cropped_hoi_1.png"
-                  class="uk-width-1-1"
-                  alt="Example #3"
-                >
-                <div class="uk-text-meta">Scissors</div>
-              </a>
-            </div>
-            <div>
-              <a
-                class="swap-model"
-                href="#"
                 data-model="models/wild/hoi_4.glb"
               >
                 <img
@@ -167,6 +127,48 @@ body:
                 <div class="uk-text-meta">Tape-measure</div>
               </a>
             </div>
+            <div>
+              <a
+                class="swap-model"
+                href="#"
+                data-model="models/oakink/hoi_26.glb"
+              >
+                <img
+                  src="models/oakink/26_cropped_hoi_1.png"
+                  class="uk-width-1-1"
+                  alt="Example #1"
+                >
+                <div class="uk-text-meta">Headphones</div>
+              </a>
+            </div>
+            <div>
+              <a
+                class="swap-model"
+                href="#"
+                data-model="models/arctic/hoi_960.glb"
+              >
+                <img
+                  src="models/arctic/960_cropped_hoi_0.png"
+                  class="uk-width-1-1"
+                  alt="Example #2"
+                >
+                <div class="uk-text-meta">Coffee machine</div>
+              </a>
+            </div>
+            <div>
+              <a
+                class="swap-model"
+                href="#"
+                data-model="models/arctic/hoi_325.glb"
+              >
+                <img
+                  src="models/arctic/325_cropped_hoi_1.png"
+                  class="uk-width-1-1"
+                  alt="Example #3"
+                >
+                <div class="uk-text-meta">Scissors</div>
+              </a>
+            </div>
           </div>
         </div>
 
@@ -175,7 +177,7 @@ body:
           <div uk-sticky="offset: 80; bottom: true">
             <model-viewer
               id="fmh-viewer"
-              src="models/oakink/hoi_26.glb" # Make sure this matches the first example
+              src="models/wild/hoi_4.glb" # Make sure this matches the first example
               camera-controls
               touch-action="pan-y"
               shadow-intensity="0.6"

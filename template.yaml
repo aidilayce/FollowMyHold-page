@@ -89,6 +89,20 @@ body:
               <a
                 class="swap-model"
                 href="#"
+                data-model="models/arctic/hoi_960.glb"
+              >
+                <img
+                  src="models/arctic/960_cropped_hoi_0.png"
+                  class="uk-width-1-1"
+                  alt="Example #2"
+                >
+                <div class="uk-text-meta">Coffee machine</div>
+              </a>
+            </div>
+            <div>
+              <a
+                class="swap-model"
+                href="#"
                 data-model="models/wild/hoi_4.glb"
               >
                 <img
@@ -145,20 +159,6 @@ body:
               <a
                 class="swap-model"
                 href="#"
-                data-model="models/arctic/hoi_960.glb"
-              >
-                <img
-                  src="models/arctic/960_cropped_hoi_0.png"
-                  class="uk-width-1-1"
-                  alt="Example #2"
-                >
-                <div class="uk-text-meta">Coffee machine</div>
-              </a>
-            </div>
-            <div>
-              <a
-                class="swap-model"
-                href="#"
                 data-model="models/arctic/hoi_325.glb"
               >
                 <img
@@ -177,7 +177,7 @@ body:
           <div uk-sticky="offset: 80; bottom: true">
             <model-viewer
               id="fmh-viewer"
-              src="models/wild/hoi_4.glb" # Make sure this matches the first example
+              src="models/arctic/hoi_960.glb" # Make sure this matches the first example
               camera-controls
               touch-action="pan-y"
               shadow-intensity="0.6"

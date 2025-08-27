@@ -25,7 +25,7 @@ authors:
     affiliation: [1]
     url: "https://people.mpi-inf.mpg.de/~aaytekin/"
   - name: "Helge Rhodin"
-    affiliation: [2]
+    affiliation: [1,2]
     url: "https://helge.rhodin.de/index.html"
   - name: "Rishabh Dabral"
     affiliation: [1]

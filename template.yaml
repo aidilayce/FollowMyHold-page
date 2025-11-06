@@ -3,7 +3,7 @@ theme: default # default || classic || dark
 organization: "Max Planck Institute for Informatics and Saarland University"
 # twitter: "@denkivvakame"
 title: "Follow My Hold: Hand-Object Interaction Reconstruction through Geometric Guidance"
-# journal: "AAAA'24"
+journal: "3DV 2026"
 
 resources:
   # paper: "https://openreview.net/"
